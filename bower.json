@@ -1,0 +1,20 @@
+{
+  "name": "Something",
+  "version": "1",
+  "authors": [
+    "hongpow <phanhong@live.de>"
+  ],
+  "description": "index.html",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "p5js": "~0.3.11"
+  }
+}
