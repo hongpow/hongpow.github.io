@@ -2,6 +2,8 @@ var song, analyzer;
 var xoff = 0.0;
 var xincrement = 0.01;
 
+
+
 function preload() {
   song = loadSound('sound.mp3');
 }
@@ -20,8 +22,10 @@ function setup() {
 
   x = width / 2;
   y = height;
+  lerp()
 
 }
+
 
 function draw() {
 
@@ -38,10 +42,8 @@ function draw() {
   fill(0, 10);
   rect(0,0,width,height);
 
-  for (var i = 0; i < 2; i ++) {
-  push();
-  star((i*100)+n, (i*20)+300, 1+vol*500, 10+vol*500, 2);
-  pop();
+  for (var i = 0; i < 7; i ++) {
+  star(n+(random(10,90)), (i*random(10,700))+10, 2+vol*300, 70+vol*200, 200);
 
   }
 }
@@ -58,11 +60,8 @@ function mousePressed() {
 }
 
 
-
-
-
 function star(x, y, radius1, radius2, npoints) {
-  fill(200);
+  fill(255,250,140);
 
   var angle = TWO_PI / npoints;
   var halfAngle = angle/2.0;
